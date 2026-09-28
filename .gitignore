@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+data/
+artifacts/
+.env
+.venv/
+venv/
+*.joblib
+*.index
