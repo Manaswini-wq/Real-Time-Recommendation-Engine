@@ -1,0 +1,29 @@
+embeddings:
+  product_dim: 128
+  user_dim: 128
+  model_name: "all-MiniLM-L6-v2"
+
+retrieval:
+  index_type: "IVF256,Flat"
+  num_candidates: 50
+  nprobe: 16
+
+ranking:
+  learning_rate: 0.05
+  num_trees: 300
+  max_depth: 6
+
+serving:
+  host: "0.0.0.0"
+  port: 8000
+  default_k: 10
+  max_k: 100
+
+redis:
+  host: "localhost"
+  port: 6379
+  user_profile_ttl: 86400
+
+streaming:
+  window_size: 50
+  update_interval_seconds: 10
